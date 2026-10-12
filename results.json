@@ -1,0 +1,43 @@
+{
+  "source": "Original coursework notebook saved outputs; not rerun during packaging",
+  "dataset": {
+    "records": 10000,
+    "raw_columns": 14,
+    "model_features": 10,
+    "churn_fraction": 0.2037,
+    "missing_tenure": 909
+  },
+  "split": {
+    "train": 6000,
+    "validation": 2000,
+    "test": 2000,
+    "random_state": 12345,
+    "stratified": true
+  },
+  "validation": {
+    "logistic_regression": {
+      "f1": 0.3214953271028037,
+      "roc_auc": 0.7874345840447535
+    },
+    "weighted_logistic_regression": {
+      "f1": 0.5108601216333623,
+      "roc_auc": 0.7917578595544696
+    },
+    "random_forest": {
+      "f1": 0.6456310679611651,
+      "roc_auc": 0.8699007173583444
+    }
+  },
+  "test": {
+    "f1": 0.6491646778042959,
+    "roc_auc": 0.8671475790119858,
+    "support": 2000
+  },
+  "best_parameters": {
+    "n_estimators": 600,
+    "max_depth": 12,
+    "min_samples_leaf": 4,
+    "class_weight": "balanced"
+  },
+  "coursework_f1_target": 0.59
+}
